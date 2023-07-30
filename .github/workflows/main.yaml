@@ -3,7 +3,7 @@ name: DownloadSecureFile
 on:
   workflow_call:
     secrets:
-      test:
+      TEST:
         required: true
 jobs:
   download_secure_file:
