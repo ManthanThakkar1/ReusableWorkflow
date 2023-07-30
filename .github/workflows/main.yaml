@@ -9,4 +9,4 @@ jobs:
     steps:
      - name: Download_Secrets
        id: Download_Secrets
-       run: echo "{{ secrets.test }}"
+       run: echo "${{ secrets.test }}"
