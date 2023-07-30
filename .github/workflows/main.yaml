@@ -10,5 +10,4 @@ jobs:
      - name: Download_Secrets
        id: Download_Secrets
        run: | 
-          echo "${{ secrets.CALL_TEST }}"
-          echo ${{ secrets.TEST }}
+          echo "This is Call Test : ${{ secrets.CALL_TEST }} and This is Test : ${{ secrets.TEST }} 
