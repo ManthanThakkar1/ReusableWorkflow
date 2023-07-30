@@ -2,13 +2,13 @@ name: DownloadSecureFile
 
 on:
   workflow_call:
-    secrets:
-      CALL_TEST:
-        required: true
+
 jobs:
   download_secure_file:
     runs-on: ubuntu-latest
     steps:
      - name: Download_Secrets
        id: Download_Secrets
-       run: echo "${{ secrets.CALL_TEST }}"
+       run: | 
+          echo "${{ secrets.CALL_TEST }}"
+          echo ${{ secrets.TEST }}
