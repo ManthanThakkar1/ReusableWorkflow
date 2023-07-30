@@ -3,7 +3,6 @@ name: DownloadSecureFile
 on:
   workflow_call:
 
-    secrets: inherit
 jobs:
   download_secure_file:
     runs-on: ubuntu-latest
